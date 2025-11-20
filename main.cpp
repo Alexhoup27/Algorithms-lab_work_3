@@ -1,0 +1,211 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
+#include <algorithm>
+#include <fstream>
+#include <sstream>
+#include <ctime>
+#include <utility>
+#include <map>
+
+struct MadeReader{
+    std::ifstream reader;
+    int _len;
+};
+
+struct FlightNumber{
+    std::string airport;
+    int id;
+};
+
+struct DepartureTime
+{
+    int hh;
+    int mm;
+};
+
+struct Record{
+    FlightNumber flight_number;
+    DepartureTime time;
+    int cost;
+    std::vector<std::string> departure_days;
+};
+
+template< typename T >
+std::vector<T> reversed(std::vector<T> data){
+    std::vector<T> to_return(data);
+    std::reverse(to_return.begin(), to_return.end());
+    return to_return;
+}
+
+template< typename T>
+void print(std::vector<T> data, bool reversed = false){
+    if (reversed == false){
+        for (T elem: data){
+            std::cout<< elem;
+        }
+    }else{
+        std::reverse(data.begin(), data.end());
+        for (T elem: data){
+            std::cout<< elem ; //<< std::endl;
+        }
+    }
+    std::cout<< std::endl;
+}
+
+template<typename T>
+std::vector<T> slice(std::vector<T> data, int first_ind, int second_ind){
+    if (second_ind > lenght(data)){
+        std::cout<<"Second ind error";
+        return data;
+    }
+    if (first_ind < 0){
+        std::cout<<"First ind error";
+    }
+    std::vector<T> new_data;
+    for(int ind= first_ind; ind<second_ind; ind++){
+        new_data.push_back(data[ind]);
+    }
+    return new_data;
+}
+
+void print_data_around_ind(Record data[], int ind){
+    std::cout<<ind<<std::endl;
+    for (int i  = ind - 4; i < ind + 4; i ++){
+        std::cout<<data[i].cost<<std::endl;
+    }
+}
+
+
+std::string slice(std::string data, int first_ind, int second_ind){
+    std::string result="";
+    if (second_ind > data.size()){
+        std::cout<<"Second ind error";
+        return data;
+    }
+    if (first_ind < 0){
+        std::cout<<"First ind error";
+    }
+    for (int ind = first_ind; first_ind < second_ind; first_ind ++){
+        result += data[ind];
+    }
+    return result;
+}
+
+std::vector<std::string> split(std::string line, char delim){
+    std::vector<std::string> to_return;
+    std::stringstream ss(line);
+    std::string part_line;
+    while (std::getline(ss, part_line, delim)){
+        to_return.push_back(part_line);
+    }
+    return to_return;
+}
+
+bool is_sorted(Record data[], int _len){
+    for (int i =1;i < _len; i++){
+        if (data[i].cost < data[i-1].cost){
+            print_data_around_ind(data, i);
+            return false;
+        }
+    }
+    return true;
+}
+
+MadeReader make_reader(std::string root_to_input_file){
+    MadeReader to_return;
+    std::ifstream reader(root_to_input_file);
+    std::string line_n;
+    int n=0;
+    if (std::getline(reader, line_n)){
+        n = std::stoi(line_n);
+    }else{
+        throw std::invalid_argument( "Wrong file!🤘" );
+    }
+    to_return.reader = std::move(reader);
+    to_return._len = n;
+    return to_return;
+}
+
+Record make_record(std::string line){
+    Record to_return;
+    auto to_rec = split(line, ',');
+    FlightNumber now_FN;
+    DepartureTime now_DP;
+    now_FN.airport = slice(to_rec[0], 0, 2);
+    now_FN.id = std::stoi(slice(to_rec[0], 2, 5));
+    auto to_DP = split(to_rec[1], ':');
+    now_DP.hh = std::stoi(to_DP[0]);
+    now_DP.mm = std::stoi(to_DP[1]);
+    to_return.flight_number = now_FN;
+    to_return.time = now_DP;
+    to_return.cost = std::stoi(to_rec[2]);
+    if (to_rec.size() == 4){
+        to_return.departure_days  = split(to_rec[3], ' ');
+    }else{
+        to_return.departure_days = {};
+    }
+    return to_return;
+}
+
+Record* insert_sort_arr(Record* data, int _len){ // Should to bee test
+    Record* new_data = new Record[_len];
+    int count = 0;
+    for (int i =0; i<_len; i++) {
+        bool flag=true;
+        int j =1;
+        for (j; j<i; j++){
+            if (data[i].cost < new_data[j].cost &&\
+            data[i].cost >= new_data[j-1].cost){
+                for (int k =j+1; k < count; k++){
+                    data[k] = data[k-1];
+                }
+                new_data[j] = data[i];
+                flag= false;
+                count++;
+                break;
+            }
+        }
+        if (flag){
+            for (int k =j+1; k < count; k++){
+                data[k] = data[k-1];
+            }
+            new_data[j] = data[i];
+            flag= false;
+            count++;
+        }
+    }
+    return new_data;
+}
+
+int main(){
+    std::string root_to_input_file;
+    std::cout<<"Enter file name(start from disk)"<<std::endl;
+    //C:\Users\Alexandr\CLionProjects\Lab_work3\sorted_output.txt
+    std::cin>>root_to_input_file;
+    std::cout<<root_to_input_file<<std::endl;
+    std::string line_n;
+    MadeReader reader = make_reader(root_to_input_file);
+    Record* raw_arr = new Record[reader._len];
+    std::string line ="";
+    int ind=0;
+    auto start_time = clock();
+    while (std::getline(reader.reader, line)){
+        Record to_add = make_record(line);
+        raw_arr[ind] = to_add;
+        ind++;
+    }
+    auto end_time = clock();
+    std::cout<<"Time of add to dinamyc arr: "<<end_time - start_time<<std::endl;
+    std::vector<Record> data;
+    reader = make_reader(root_to_input_file);
+    start_time = clock();
+    while (std::getline(reader.reader, line)){
+        // Record to_add = make_record(line);
+        data.push_back(make_record(line));
+    }
+    end_time = clock();
+    std::cout<<"Time of add to vector: "<<end_time - start_time<<std::endl;
+    return 0;
+}

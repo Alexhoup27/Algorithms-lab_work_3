@@ -1,0 +1,1001 @@
+1000
+ab012,9:4,859691,
+ac013,17:23,671921,Mon 
+ad014,4:36,166084,Mon Tue 
+ae015,19:13,366406,Tue 
+af016,4:18,398135,Tue Wed 
+ag017,4:10,542860,Mon Tue Wed 
+ah018,19:32,652386,Mon Wed 
+ai019,6:59,499126,Wed 
+aj023,19:19,913844,Wed Thu 
+ak024,19:15,484928,Mon Wed Thu 
+al025,13:42,972030,Mon Tue Wed Thu 
+am026,10:56,885374,Tue Wed Thu 
+an027,6:30,211121,Tue Thu 
+ao028,3:56,498991,Mon Tue Thu 
+ap029,15:26,238825,Mon Thu 
+aq034,5:9,945423,Thu 
+ar035,9:2,120529,Thu Fri 
+as036,1:5,766957,Mon Thu Fri 
+at037,13:33,648422,Mon Tue Thu Fri 
+au038,23:18,39949,Tue Thu Fri 
+av039,18:25,432206,Tue Wed Thu Fri 
+aw045,18:50,574054,Mon Tue Wed Thu Fri 
+ax046,3:50,52187,Mon Wed Thu Fri 
+ay047,23:51,251363,Wed Thu Fri 
+az048,6:37,364299,Wed Fri 
+bc049,14:6,385139,Mon Wed Fri 
+bd056,8:44,736461,Mon Tue Wed Fri 
+be057,8:28,266841,Tue Wed Fri 
+bf058,4:29,766953,Tue Fri 
+bg059,23:50,939931,Mon Tue Fri 
+bh067,14:14,325987,Mon Fri 
+bi068,5:8,131297,Fri 
+bj069,4:56,593009,Fri Sat 
+bk078,3:18,473967,Mon Fri Sat 
+bl079,1:11,324940,Mon Tue Fri Sat 
+bm089,9:50,471904,Tue Fri Sat 
+bn123,3:1,995936,Tue Wed Fri Sat 
+bo124,22:51,321862,Mon Tue Wed Fri Sat 
+bp125,19:11,704417,Mon Wed Fri Sat 
+bq126,23:22,425708,Wed Fri Sat 
+br127,6:11,795423,Wed Thu Fri Sat 
+bs128,22:6,820718,Mon Wed Thu Fri Sat 
+bt129,6:26,221830,Mon Tue Wed Thu Fri Sat 
+bu134,8:50,129978,Tue Wed Thu Fri Sat 
+bv135,19:10,360758,Tue Thu Fri Sat 
+bw136,2:50,726312,Mon Tue Thu Fri Sat 
+bx137,6:54,174778,Mon Thu Fri Sat 
+by138,10:11,633619,Thu Fri Sat 
+bz139,16:4,817395,Thu Sat 
+cd145,3:11,265955,Mon Thu Sat 
+ce146,15:7,275702,Mon Tue Thu Sat 
+cf147,10:18,67135,Tue Thu Sat 
+cg148,1:11,608325,Tue Wed Thu Sat 
+ch149,3:42,344733,Mon Tue Wed Thu Sat 
+ci156,1:41,453132,Mon Wed Thu Sat 
+cj157,14:50,694270,Wed Thu Sat 
+ck158,15:50,311412,Wed Sat 
+cl159,12:24,720812,Mon Wed Sat 
+cm167,8:7,947712,Mon Tue Wed Sat 
+cn168,15:44,253511,Tue Wed Sat 
+co169,15:41,79417,Tue Sat 
+cp178,18:51,710541,Mon Tue Sat 
+cq179,9:5,99651,Mon Sat 
+cr189,18:32,960139,Sat 
+cs234,3:11,508292,Sat Sun
+ct235,14:44,194977,Mon Sat Sun
+cu236,22:45,507369,Mon Tue Sat Sun
+cv237,14:14,998182,Tue Sat Sun
+cw238,4:51,582314,Tue Wed Sat Sun
+cx239,10:29,852358,Mon Tue Wed Sat Sun
+cy245,2:8,712727,Mon Wed Sat Sun
+cz246,10:49,743086,Wed Sat Sun
+de247,5:20,784734,Wed Thu Sat Sun
+df248,2:48,858146,Mon Wed Thu Sat Sun
+dg249,16:4,773332,Mon Tue Wed Thu Sat Sun
+dh256,6:2,977538,Tue Wed Thu Sat Sun
+di257,19:4,764798,Tue Thu Sat Sun
+dj258,5:26,983188,Mon Tue Thu Sat Sun
+dk259,22:11,988870,Mon Thu Sat Sun
+dl267,23:26,558578,Thu Sat Sun
+dm268,15:51,163518,Thu Fri Sat Sun
+dn269,22:2,625943,Mon Thu Fri Sat Sun
+do278,13:38,867291,Mon Tue Thu Fri Sat Sun
+dp279,16:25,386433,Tue Thu Fri Sat Sun
+dq289,21:9,528165,Tue Wed Thu Fri Sat Sun
+dr345,8:56,331922,Mon Tue Wed Thu Fri Sat Sun
+ds346,3:40,892613,Mon Wed Thu Fri Sat Sun
+dt347,2:14,282037,Wed Thu Fri Sat Sun
+du348,22:36,901727,Wed Fri Sat Sun
+dv349,13:54,982045,Mon Wed Fri Sat Sun
+dw356,8:15,379016,Mon Tue Wed Fri Sat Sun
+dx357,12:10,29741,Tue Wed Fri Sat Sun
+dy358,3:8,876039,Tue Fri Sat Sun
+dz359,3:23,20865,Mon Tue Fri Sat Sun
+ef367,3:18,982514,Mon Fri Sat Sun
+eg368,1:46,790244,Fri Sat Sun
+eh369,14:51,515677,Fri Sun
+ei378,19:34,80331,Mon Fri Sun
+ej379,16:43,398529,Mon Tue Fri Sun
+ek389,2:26,769218,Tue Fri Sun
+el456,12:8,357107,Tue Wed Fri Sun
+em457,3:47,918399,Mon Tue Wed Fri Sun
+en458,2:11,706113,Mon Wed Fri Sun
+eo459,9:2,312458,Wed Fri Sun
+ep467,12:31,193704,Wed Thu Fri Sun
+eq468,10:13,9446,Mon Wed Thu Fri Sun
+er469,16:10,403066,Mon Tue Wed Thu Fri Sun
+es478,12:36,587557,Tue Wed Thu Fri Sun
+et479,12:10,138879,Tue Thu Fri Sun
+eu489,20:26,479552,Mon Tue Thu Fri Sun
+ev567,4:5,787230,Mon Thu Fri Sun
+ew568,17:37,277251,Thu Fri Sun
+ex569,13:45,601467,Thu Sun
+ey578,11:50,634047,Mon Thu Sun
+ez579,3:56,297112,Mon Tue Thu Sun
+fg589,22:49,400421,Tue Thu Sun
+fh678,3:53,539757,Tue Wed Thu Sun
+fi679,19:42,521989,Mon Tue Wed Thu Sun
+fj689,2:38,760511,Mon Wed Thu Sun
+fk789,3:36,565115,Wed Thu Sun
+fl012,13:14,915042,Wed Sun
+fm013,14:51,695574,Mon Wed Sun
+fn014,4:56,742996,Mon Tue Wed Sun
+fo015,11:38,661069,Tue Wed Sun
+fp016,13:22,932025,Tue Sun
+fq017,2:21,627613,Mon Tue Sun
+fr018,5:59,934092,Mon Sun
+fs019,21:32,995928,Sun
+ft023,23:41,274419,
+fu024,4:5,299556,Mon 
+fv025,10:6,371853,Mon Tue 
+fw026,4:5,808055,Tue 
+fx027,22:17,1743,Tue Wed 
+fy028,5:59,270883,Mon Tue Wed 
+fz029,14:42,58229,Mon Wed 
+gh034,10:24,888723,Wed 
+gi035,1:6,217145,Wed Thu 
+gj036,17:15,686935,Mon Wed Thu 
+gk037,18:5,602478,Mon Tue Wed Thu 
+gl038,4:17,240894,Tue Wed Thu 
+gm039,10:39,121299,Tue Thu 
+gn045,10:47,52077,Mon Tue Thu 
+go046,19:12,628031,Mon Thu 
+gp047,23:17,1738,Thu 
+gq048,5:6,900832,Thu Fri 
+gr049,13:48,462582,Mon Thu Fri 
+gs056,7:18,92137,Mon Tue Thu Fri 
+gt057,3:37,593129,Tue Thu Fri 
+gu058,4:7,742822,Tue Wed Thu Fri 
+gv059,5:56,281849,Mon Tue Wed Thu Fri 
+gw067,16:57,386778,Mon Wed Thu Fri 
+gx068,3:51,298593,Wed Thu Fri 
+gy069,19:42,967014,Wed Fri 
+gz078,7:29,143065,Mon Wed Fri 
+hi079,7:56,693610,Mon Tue Wed Fri 
+hj089,20:1,461394,Tue Wed Fri 
+hk123,22:1,372892,Tue Fri 
+hl124,9:22,368186,Mon Tue Fri 
+hm125,13:23,816380,Mon Fri 
+hn126,23:13,126329,Fri 
+ho127,22:33,523542,Fri Sat 
+hp128,6:17,423109,Mon Fri Sat 
+hq129,6:33,415343,Mon Tue Fri Sat 
+hr134,6:9,786848,Tue Fri Sat 
+hs135,9:44,283434,Tue Wed Fri Sat 
+ht136,3:2,740139,Mon Tue Wed Fri Sat 
+hu137,2:54,907983,Mon Wed Fri Sat 
+hv138,10:19,230362,Wed Fri Sat 
+hw139,4:49,4261,Wed Thu Fri Sat 
+hx145,6:12,780332,Mon Wed Thu Fri Sat 
+hy146,10:41,83441,Mon Tue Wed Thu Fri Sat 
+hz147,20:45,844015,Tue Wed Thu Fri Sat 
+ij148,8:57,874544,Tue Thu Fri Sat 
+ik149,11:11,558473,Mon Tue Thu Fri Sat 
+il156,18:2,437482,Mon Thu Fri Sat 
+im157,14:53,138988,Thu Fri Sat 
+in158,5:41,173615,Thu Sat 
+io159,11:25,480182,Mon Thu Sat 
+ip167,19:23,327848,Mon Tue Thu Sat 
+iq168,20:24,696161,Tue Thu Sat 
+ir169,2:35,574521,Tue Wed Thu Sat 
+is178,5:18,514054,Mon Tue Wed Thu Sat 
+it179,10:6,641249,Mon Wed Thu Sat 
+iu189,18:27,868546,Wed Thu Sat 
+iv234,10:10,301651,Wed Sat 
+iw235,9:42,330992,Mon Wed Sat 
+ix236,1:5,58981,Mon Tue Wed Sat 
+iy237,8:14,521940,Tue Wed Sat 
+iz238,20:24,623832,Tue Sat 
+jk239,19:19,112756,Mon Tue Sat 
+jl245,5:26,193908,Mon Sat 
+jm246,10:38,153050,Sat 
+jn247,21:29,920621,Sat Sun
+jo248,6:24,431625,Mon Sat Sun
+jp249,15:21,451207,Mon Tue Sat Sun
+jq256,22:44,75254,Tue Sat Sun
+jr257,14:39,297949,Tue Wed Sat Sun
+js258,6:50,698082,Mon Tue Wed Sat Sun
+jt259,17:42,226971,Mon Wed Sat Sun
+ju267,15:35,860173,Wed Sat Sun
+jv268,2:52,680681,Wed Thu Sat Sun
+jw269,11:2,106191,Mon Wed Thu Sat Sun
+jx278,6:26,485345,Mon Tue Wed Thu Sat Sun
+jy279,6:37,615188,Tue Wed Thu Sat Sun
+jz289,8:16,2724,Tue Thu Sat Sun
+kl345,19:20,49237,Mon Tue Thu Sat Sun
+km346,23:2,114923,Mon Thu Sat Sun
+kn347,6:36,778968,Thu Sat Sun
+ko348,20:37,437570,Thu Fri Sat Sun
+kp349,4:28,364385,Mon Thu Fri Sat Sun
+kq356,8:26,183271,Mon Tue Thu Fri Sat Sun
+kr357,10:30,499031,Tue Thu Fri Sat Sun
+ks358,15:3,734747,Tue Wed Thu Fri Sat Sun
+kt359,9:57,86408,Mon Tue Wed Thu Fri Sat Sun
+ku367,8:52,187133,Mon Wed Thu Fri Sat Sun
+kv368,22:1,78800,Wed Thu Fri Sat Sun
+kw369,17:40,985012,Wed Fri Sat Sun
+kx378,3:17,571822,Mon Wed Fri Sat Sun
+ky379,1:11,28747,Mon Tue Wed Fri Sat Sun
+kz389,16:0,883842,Tue Wed Fri Sat Sun
+lm456,18:21,385321,Tue Fri Sat Sun
+ln457,16:24,297549,Mon Tue Fri Sat Sun
+lo458,23:26,154997,Mon Fri Sat Sun
+lp459,3:33,546262,Fri Sat Sun
+lq467,15:1,510035,Fri Sun
+lr468,3:22,300575,Mon Fri Sun
+ls469,8:55,515997,Mon Tue Fri Sun
+lt478,22:43,988255,Tue Fri Sun
+lu479,13:50,354730,Tue Wed Fri Sun
+lv489,9:29,682304,Mon Tue Wed Fri Sun
+lw567,20:45,397277,Mon Wed Fri Sun
+lx568,16:55,916182,Wed Fri Sun
+ly569,8:23,539260,Wed Thu Fri Sun
+lz578,3:51,720293,Mon Wed Thu Fri Sun
+mn579,18:51,614099,Mon Tue Wed Thu Fri Sun
+mo589,22:1,852567,Tue Wed Thu Fri Sun
+mp678,20:10,739420,Tue Thu Fri Sun
+mq679,22:8,753118,Mon Tue Thu Fri Sun
+mr689,15:53,804085,Mon Thu Fri Sun
+ms789,22:35,872610,Thu Fri Sun
+mt012,19:0,764601,Thu Sun
+mu013,21:36,922217,Mon Thu Sun
+mv014,12:25,902274,Mon Tue Thu Sun
+mw015,21:12,728784,Tue Thu Sun
+mx016,17:26,618937,Tue Wed Thu Sun
+my017,2:2,441826,Mon Tue Wed Thu Sun
+mz018,15:32,434693,Mon Wed Thu Sun
+no019,20:40,637039,Wed Thu Sun
+np023,15:45,615430,Wed Sun
+nq024,4:33,643948,Mon Wed Sun
+nr025,3:14,986389,Mon Tue Wed Sun
+ns026,1:31,269211,Tue Wed Sun
+nt027,11:4,261768,Tue Sun
+nu028,8:32,427503,Mon Tue Sun
+nv029,5:50,688165,Mon Sun
+nw034,1:18,159998,Sun
+nx035,14:7,473015,
+ny036,3:25,576155,Mon 
+nz037,7:49,180171,Mon Tue 
+op038,11:11,423097,Tue 
+oq039,21:40,698476,Tue Wed 
+or045,11:36,21061,Mon Tue Wed 
+os046,18:16,207989,Mon Wed 
+ot047,4:53,33741,Wed 
+ou048,14:51,975020,Wed Thu 
+ov049,2:51,511051,Mon Wed Thu 
+ow056,21:18,59699,Mon Tue Wed Thu 
+ox057,16:13,803182,Tue Wed Thu 
+oy058,16:33,424502,Tue Thu 
+oz059,19:18,281338,Mon Tue Thu 
+pq067,9:10,28033,Mon Thu 
+pr068,5:48,218956,Thu 
+ps069,23:1,877107,Thu Fri 
+pt078,22:39,672676,Mon Thu Fri 
+pu079,8:42,106172,Mon Tue Thu Fri 
+pv089,16:31,518742,Tue Thu Fri 
+pw123,4:1,696750,Tue Wed Thu Fri 
+px124,13:20,163439,Mon Tue Wed Thu Fri 
+py125,17:5,300053,Mon Wed Thu Fri 
+pz126,7:8,218507,Wed Thu Fri 
+qr127,2:18,891516,Wed Fri 
+qs128,17:50,165182,Mon Wed Fri 
+qt129,19:26,894950,Mon Tue Wed Fri 
+qu134,8:44,993235,Tue Wed Fri 
+qv135,4:29,631264,Tue Fri 
+qw136,21:21,480539,Mon Tue Fri 
+qx137,5:8,10011,Mon Fri 
+qy138,20:36,223868,Fri 
+qz139,8:54,494358,Fri Sat 
+rs145,9:25,45836,Mon Fri Sat 
+rt146,9:27,649277,Mon Tue Fri Sat 
+ru147,20:2,694810,Tue Fri Sat 
+rv148,18:31,278479,Tue Wed Fri Sat 
+rw149,21:38,269528,Mon Tue Wed Fri Sat 
+rx156,3:11,162194,Mon Wed Fri Sat 
+ry157,5:4,770919,Wed Fri Sat 
+rz158,18:3,12260,Wed Thu Fri Sat 
+st159,5:47,704630,Mon Wed Thu Fri Sat 
+su167,1:7,869411,Mon Tue Wed Thu Fri Sat 
+sv168,4:3,688587,Tue Wed Thu Fri Sat 
+sw169,6:12,968395,Tue Thu Fri Sat 
+sx178,18:50,805002,Mon Tue Thu Fri Sat 
+sy179,13:18,770662,Mon Thu Fri Sat 
+sz189,20:0,610466,Thu Fri Sat 
+tu234,22:51,616764,Thu Sat 
+tv235,3:29,696821,Mon Thu Sat 
+tw236,9:48,829881,Mon Tue Thu Sat 
+tx237,18:43,580160,Tue Thu Sat 
+ty238,22:35,770178,Tue Wed Thu Sat 
+tz239,3:42,882385,Mon Tue Wed Thu Sat 
+uv245,1:44,404617,Mon Wed Thu Sat 
+uw246,5:49,279845,Wed Thu Sat 
+ux247,20:24,187004,Wed Sat 
+uy248,6:33,571302,Mon Wed Sat 
+uz249,13:6,425830,Mon Tue Wed Sat 
+vw256,21:10,529513,Tue Wed Sat 
+vx257,3:45,917676,Tue Sat 
+vy258,23:59,31063,Mon Tue Sat 
+vz259,7:58,18054,Mon Sat 
+wx267,7:59,772255,Sat 
+wy268,6:50,460148,Sat Sun
+wz269,18:5,129075,Mon Sat Sun
+xy278,18:21,267065,Mon Tue Sat Sun
+xz279,22:8,619626,Tue Sat Sun
+yz289,15:9,33615,Tue Wed Sat Sun
+ab345,16:3,540104,Mon Tue Wed Sat Sun
+ac346,21:38,843342,Mon Wed Sat Sun
+ad347,14:40,595162,Wed Sat Sun
+ae348,23:37,891536,Wed Thu Sat Sun
+af349,22:21,905058,Mon Wed Thu Sat Sun
+ag356,5:51,389505,Mon Tue Wed Thu Sat Sun
+ah357,8:29,10999,Tue Wed Thu Sat Sun
+ai358,16:21,761296,Tue Thu Sat Sun
+aj359,17:55,267572,Mon Tue Thu Sat Sun
+ak367,21:36,494551,Mon Thu Sat Sun
+al368,14:47,474512,Thu Sat Sun
+am369,18:2,592328,Thu Fri Sat Sun
+an378,21:36,807379,Mon Thu Fri Sat Sun
+ao379,7:40,344252,Mon Tue Thu Fri Sat Sun
+ap389,21:49,511290,Tue Thu Fri Sat Sun
+aq456,17:32,416705,Tue Wed Thu Fri Sat Sun
+ar457,16:26,857268,Mon Tue Wed Thu Fri Sat Sun
+as458,20:2,318423,Mon Wed Thu Fri Sat Sun
+at459,16:44,806384,Wed Thu Fri Sat Sun
+au467,6:47,899759,Wed Fri Sat Sun
+av468,1:2,145232,Mon Wed Fri Sat Sun
+aw469,17:39,302469,Mon Tue Wed Fri Sat Sun
+ax478,5:45,176661,Tue Wed Fri Sat Sun
+ay479,22:5,938085,Tue Fri Sat Sun
+az489,4:9,252164,Mon Tue Fri Sat Sun
+bc567,18:7,851259,Mon Fri Sat Sun
+bd568,21:41,828953,Fri Sat Sun
+be569,19:44,136274,Fri Sun
+bf578,8:27,408520,Mon Fri Sun
+bg579,21:19,171747,Mon Tue Fri Sun
+bh589,4:18,930118,Tue Fri Sun
+bi678,13:44,27548,Tue Wed Fri Sun
+bj679,8:27,715928,Mon Tue Wed Fri Sun
+bk689,3:2,578046,Mon Wed Fri Sun
+bl789,1:43,84481,Wed Fri Sun
+bm012,23:49,243951,Wed Thu Fri Sun
+bn013,23:46,341833,Mon Wed Thu Fri Sun
+bo014,1:1,493017,Mon Tue Wed Thu Fri Sun
+bp015,11:38,509340,Tue Wed Thu Fri Sun
+bq016,15:52,670011,Tue Thu Fri Sun
+br017,16:10,651322,Mon Tue Thu Fri Sun
+bs018,16:41,720295,Mon Thu Fri Sun
+bt019,4:5,900941,Thu Fri Sun
+bu023,5:16,508251,Thu Sun
+bv024,9:11,582273,Mon Thu Sun
+bw025,14:6,372224,Mon Tue Thu Sun
+bx026,13:36,732027,Tue Thu Sun
+by027,18:46,704985,Tue Wed Thu Sun
+bz028,4:2,344461,Mon Tue Wed Thu Sun
+cd029,7:32,236495,Mon Wed Thu Sun
+ce034,12:37,77075,Wed Thu Sun
+cf035,10:44,473250,Wed Sun
+cg036,11:35,533593,Mon Wed Sun
+ch037,1:0,100660,Mon Tue Wed Sun
+ci038,3:56,265998,Tue Wed Sun
+cj039,4:29,472838,Tue Sun
+ck045,21:51,266809,Mon Tue Sun
+cl046,14:4,998402,Mon Sun
+cm047,2:28,35361,Sun
+cn048,22:6,544047,
+co049,2:28,104921,Mon 
+cp056,22:21,862967,Mon Tue 
+cq057,7:41,371728,Tue 
+cr058,1:54,474390,Tue Wed 
+cs059,2:27,234503,Mon Tue Wed 
+ct067,6:45,729667,Mon Wed 
+cu068,22:56,497104,Wed 
+cv069,11:24,482676,Wed Thu 
+cw078,19:25,513428,Mon Wed Thu 
+cx079,22:34,967842,Mon Tue Wed Thu 
+cy089,5:3,44223,Tue Wed Thu 
+cz123,16:33,75666,Tue Thu 
+de124,3:56,757587,Mon Tue Thu 
+df125,15:48,405327,Mon Thu 
+dg126,18:43,350568,Thu 
+dh127,16:57,198173,Thu Fri 
+di128,8:33,591907,Mon Thu Fri 
+dj129,20:18,524562,Mon Tue Thu Fri 
+dk134,15:41,357014,Tue Thu Fri 
+dl135,23:28,537261,Tue Wed Thu Fri 
+dm136,20:26,974983,Mon Tue Wed Thu Fri 
+dn137,9:45,217399,Mon Wed Thu Fri 
+do138,11:7,369872,Wed Thu Fri 
+dp139,8:12,192069,Wed Fri 
+dq145,8:58,950100,Mon Wed Fri 
+dr146,2:33,143049,Mon Tue Wed Fri 
+ds147,8:49,903431,Tue Wed Fri 
+dt148,15:40,908062,Tue Fri 
+du149,13:42,507076,Mon Tue Fri 
+dv156,3:51,219181,Mon Fri 
+dw157,12:26,357096,Fri 
+dx158,12:41,704539,Fri Sat 
+dy159,4:4,43845,Mon Fri Sat 
+dz167,19:52,382896,Mon Tue Fri Sat 
+ef168,18:33,366363,Tue Fri Sat 
+eg169,19:12,364640,Tue Wed Fri Sat 
+eh178,22:1,964036,Mon Tue Wed Fri Sat 
+ei179,13:48,177416,Mon Wed Fri Sat 
+ej189,10:32,631169,Wed Fri Sat 
+ek234,8:6,344252,Wed Thu Fri Sat 
+el235,12:23,671333,Mon Wed Thu Fri Sat 
+em236,4:25,920877,Mon Tue Wed Thu Fri Sat 
+en237,11:39,135951,Tue Wed Thu Fri Sat 
+eo238,22:51,54703,Tue Thu Fri Sat 
+ep239,6:44,706363,Mon Tue Thu Fri Sat 
+eq245,16:3,123712,Mon Thu Fri Sat 
+er246,18:8,864052,Thu Fri Sat 
+es247,2:47,689353,Thu Sat 
+et248,6:53,114313,Mon Thu Sat 
+eu249,8:38,476986,Mon Tue Thu Sat 
+ev256,15:19,581637,Tue Thu Sat 
+ew257,7:36,79372,Tue Wed Thu Sat 
+ex258,21:15,216700,Mon Tue Wed Thu Sat 
+ey259,19:11,281074,Mon Wed Thu Sat 
+ez267,18:1,602647,Wed Thu Sat 
+fg268,20:3,239684,Wed Sat 
+fh269,21:32,918462,Mon Wed Sat 
+fi278,22:35,377844,Mon Tue Wed Sat 
+fj279,2:18,727825,Tue Wed Sat 
+fk289,20:48,624445,Tue Sat 
+fl345,19:17,514196,Mon Tue Sat 
+fm346,9:1,579151,Mon Sat 
+fn347,1:38,910771,Sat 
+fo348,12:47,218747,Sat Sun
+fp349,11:23,290004,Mon Sat Sun
+fq356,17:13,222911,Mon Tue Sat Sun
+fr357,8:25,991797,Tue Sat Sun
+fs358,14:25,382532,Tue Wed Sat Sun
+ft359,19:43,685547,Mon Tue Wed Sat Sun
+fu367,20:52,396688,Mon Wed Sat Sun
+fv368,13:27,972113,Wed Sat Sun
+fw369,8:9,435465,Wed Thu Sat Sun
+fx378,14:49,923609,Mon Wed Thu Sat Sun
+fy379,2:27,904447,Mon Tue Wed Thu Sat Sun
+fz389,3:55,76105,Tue Wed Thu Sat Sun
+gh456,23:18,669583,Tue Thu Sat Sun
+gi457,7:49,537318,Mon Tue Thu Sat Sun
+gj458,22:45,91410,Mon Thu Sat Sun
+gk459,18:46,139001,Thu Sat Sun
+gl467,5:30,215316,Thu Fri Sat Sun
+gm468,9:38,755905,Mon Thu Fri Sat Sun
+gn469,23:14,215301,Mon Tue Thu Fri Sat Sun
+go478,14:48,999970,Tue Thu Fri Sat Sun
+gp479,1:15,519192,Tue Wed Thu Fri Sat Sun
+gq489,4:36,401335,Mon Tue Wed Thu Fri Sat Sun
+gr567,22:17,179311,Mon Wed Thu Fri Sat Sun
+gs568,23:7,330434,Wed Thu Fri Sat Sun
+gt569,6:5,860325,Wed Fri Sat Sun
+gu578,17:50,341598,Mon Wed Fri Sat Sun
+gv579,3:28,978007,Mon Tue Wed Fri Sat Sun
+gw589,14:27,768166,Tue Wed Fri Sat Sun
+gx678,23:43,159661,Tue Fri Sat Sun
+gy679,18:44,612142,Mon Tue Fri Sat Sun
+gz689,10:34,692633,Mon Fri Sat Sun
+hi789,6:16,49955,Fri Sat Sun
+hj012,17:59,107508,Fri Sun
+hk013,9:25,152696,Mon Fri Sun
+hl014,1:50,797600,Mon Tue Fri Sun
+hm015,4:47,359481,Tue Fri Sun
+hn016,3:18,592634,Tue Wed Fri Sun
+ho017,6:42,596217,Mon Tue Wed Fri Sun
+hp018,10:22,533630,Mon Wed Fri Sun
+hq019,19:12,883762,Wed Fri Sun
+hr023,15:54,433536,Wed Thu Fri Sun
+hs024,16:59,802815,Mon Wed Thu Fri Sun
+ht025,12:16,840534,Mon Tue Wed Thu Fri Sun
+hu026,10:22,198214,Tue Wed Thu Fri Sun
+hv027,12:4,191064,Tue Thu Fri Sun
+hw028,18:17,279456,Mon Tue Thu Fri Sun
+hx029,17:49,839953,Mon Thu Fri Sun
+hy034,3:49,278311,Thu Fri Sun
+hz035,18:37,997744,Thu Sun
+ij036,9:17,689152,Mon Thu Sun
+ik037,8:7,190643,Mon Tue Thu Sun
+il038,9:58,589989,Tue Thu Sun
+im039,8:15,804649,Tue Wed Thu Sun
+in045,16:23,209592,Mon Tue Wed Thu Sun
+io046,23:28,250618,Mon Wed Thu Sun
+ip047,6:15,91441,Wed Thu Sun
+iq048,5:11,767243,Wed Sun
+ir049,13:11,17751,Mon Wed Sun
+is056,16:13,854831,Mon Tue Wed Sun
+it057,7:10,827452,Tue Wed Sun
+iu058,1:10,595111,Tue Sun
+iv059,12:31,488352,Mon Tue Sun
+iw067,16:52,331973,Mon Sun
+ix068,16:0,481618,Sun
+iy069,5:48,986734,
+iz078,22:37,289879,Mon 
+jk079,19:4,622274,Mon Tue 
+jl089,4:10,282014,Tue 
+jm123,21:33,984506,Tue Wed 
+jn124,11:13,286403,Mon Tue Wed 
+jo125,10:18,991354,Mon Wed 
+jp126,9:20,986509,Wed 
+jq127,1:55,379209,Wed Thu 
+jr128,11:35,205926,Mon Wed Thu 
+js129,20:0,537749,Mon Tue Wed Thu 
+jt134,22:55,687676,Tue Wed Thu 
+ju135,8:13,50953,Tue Thu 
+jv136,7:19,41012,Mon Tue Thu 
+jw137,16:9,273928,Mon Thu 
+jx138,13:26,560739,Thu 
+jy139,15:37,23862,Thu Fri 
+jz145,12:16,507370,Mon Thu Fri 
+kl146,10:37,894863,Mon Tue Thu Fri 
+km147,6:38,715872,Tue Thu Fri 
+kn148,7:32,589251,Tue Wed Thu Fri 
+ko149,14:37,397944,Mon Tue Wed Thu Fri 
+kp156,2:57,373682,Mon Wed Thu Fri 
+kq157,16:5,575329,Wed Thu Fri 
+kr158,16:20,650552,Wed Fri 
+ks159,11:5,454566,Mon Wed Fri 
+kt167,5:57,762097,Mon Tue Wed Fri 
+ku168,20:5,780256,Tue Wed Fri 
+kv169,15:1,358391,Tue Fri 
+kw178,10:28,204699,Mon Tue Fri 
+kx179,17:28,133847,Mon Fri 
+ky189,3:26,557648,Fri 
+kz234,3:24,304690,Fri Sat 
+lm235,5:40,663439,Mon Fri Sat 
+ln236,2:7,791592,Mon Tue Fri Sat 
+lo237,2:10,40803,Tue Fri Sat 
+lp238,14:3,226593,Tue Wed Fri Sat 
+lq239,21:39,113048,Mon Tue Wed Fri Sat 
+lr245,3:19,857677,Mon Wed Fri Sat 
+ls246,17:18,243235,Wed Fri Sat 
+lt247,6:56,743532,Wed Thu Fri Sat 
+lu248,1:0,775134,Mon Wed Thu Fri Sat 
+lv249,2:4,47841,Mon Tue Wed Thu Fri Sat 
+lw256,7:4,370511,Tue Wed Thu Fri Sat 
+lx257,7:30,202893,Tue Thu Fri Sat 
+ly258,10:11,694548,Mon Tue Thu Fri Sat 
+lz259,7:45,361647,Mon Thu Fri Sat 
+mn267,3:58,687255,Thu Fri Sat 
+mo268,22:46,985633,Thu Sat 
+mp269,4:50,229252,Mon Thu Sat 
+mq278,21:38,97734,Mon Tue Thu Sat 
+mr279,14:11,749161,Tue Thu Sat 
+ms289,5:53,24221,Tue Wed Thu Sat 
+mt345,1:9,855179,Mon Tue Wed Thu Sat 
+mu346,20:17,791145,Mon Wed Thu Sat 
+mv347,22:51,510840,Wed Thu Sat 
+mw348,18:55,321652,Wed Sat 
+mx349,4:11,75099,Mon Wed Sat 
+my356,9:38,141590,Mon Tue Wed Sat 
+mz357,13:30,645278,Tue Wed Sat 
+no358,6:46,123253,Tue Sat 
+np359,6:46,963876,Mon Tue Sat 
+nq367,22:46,372362,Mon Sat 
+nr368,7:0,509255,Sat 
+ns369,10:48,104397,Sat Sun
+nt378,6:24,472109,Mon Sat Sun
+nu379,1:11,926822,Mon Tue Sat Sun
+nv389,12:31,620177,Tue Sat Sun
+nw456,17:14,708306,Tue Wed Sat Sun
+nx457,13:52,569523,Mon Tue Wed Sat Sun
+ny458,10:11,900212,Mon Wed Sat Sun
+nz459,19:47,621945,Wed Sat Sun
+op467,1:30,896729,Wed Thu Sat Sun
+oq468,18:50,993138,Mon Wed Thu Sat Sun
+or469,23:48,268750,Mon Tue Wed Thu Sat Sun
+os478,4:29,237119,Tue Wed Thu Sat Sun
+ot479,21:53,489357,Tue Thu Sat Sun
+ou489,22:9,565404,Mon Tue Thu Sat Sun
+ov567,20:31,353279,Mon Thu Sat Sun
+ow568,9:40,731926,Thu Sat Sun
+ox569,5:33,671952,Thu Fri Sat Sun
+oy578,18:43,372214,Mon Thu Fri Sat Sun
+oz579,17:56,291367,Mon Tue Thu Fri Sat Sun
+pq589,3:53,250248,Tue Thu Fri Sat Sun
+pr678,2:59,759727,Tue Wed Thu Fri Sat Sun
+ps679,3:59,77331,Mon Tue Wed Thu Fri Sat Sun
+pt689,22:24,659354,Mon Wed Thu Fri Sat Sun
+pu789,16:17,802265,Wed Thu Fri Sat Sun
+pv012,1:38,428120,Wed Fri Sat Sun
+pw013,9:47,544469,Mon Wed Fri Sat Sun
+px014,5:42,492142,Mon Tue Wed Fri Sat Sun
+py015,20:46,873877,Tue Wed Fri Sat Sun
+pz016,12:17,351066,Tue Fri Sat Sun
+qr017,10:56,722080,Mon Tue Fri Sat Sun
+qs018,12:36,700960,Mon Fri Sat Sun
+qt019,14:27,310709,Fri Sat Sun
+qu023,4:21,189599,Fri Sun
+qv024,6:21,7381,Mon Fri Sun
+qw025,23:32,402444,Mon Tue Fri Sun
+qx026,8:35,580695,Tue Fri Sun
+qy027,14:41,129429,Tue Wed Fri Sun
+qz028,19:4,462160,Mon Tue Wed Fri Sun
+rs029,12:39,766486,Mon Wed Fri Sun
+rt034,10:2,255002,Wed Fri Sun
+ru035,20:55,591899,Wed Thu Fri Sun
+rv036,3:50,656064,Mon Wed Thu Fri Sun
+rw037,19:45,209908,Mon Tue Wed Thu Fri Sun
+rx038,23:57,247478,Tue Wed Thu Fri Sun
+ry039,7:33,195086,Tue Thu Fri Sun
+rz045,20:25,970801,Mon Tue Thu Fri Sun
+st046,6:31,424946,Mon Thu Fri Sun
+su047,20:13,547176,Thu Fri Sun
+sv048,21:6,165459,Thu Sun
+sw049,7:51,488811,Mon Thu Sun
+sx056,9:28,885021,Mon Tue Thu Sun
+sy057,6:27,417537,Tue Thu Sun
+sz058,12:13,859590,Tue Wed Thu Sun
+tu059,16:11,949901,Mon Tue Wed Thu Sun
+tv067,18:59,48757,Mon Wed Thu Sun
+tw068,8:29,597341,Wed Thu Sun
+tx069,7:18,305457,Wed Sun
+ty078,2:51,494301,Mon Wed Sun
+tz079,23:16,797011,Mon Tue Wed Sun
+uv089,11:25,31639,Tue Wed Sun
+uw123,15:21,88556,Tue Sun
+ux124,23:12,395656,Mon Tue Sun
+uy125,3:18,282887,Mon Sun
+uz126,23:42,617168,Sun
+vw127,18:52,563621,
+vx128,17:58,446954,Mon 
+vy129,16:57,664678,Mon Tue 
+vz134,1:2,800918,Tue 
+wx135,15:47,302691,Tue Wed 
+wy136,1:57,286886,Mon Tue Wed 
+wz137,21:8,12643,Mon Wed 
+xy138,4:54,428605,Wed 
+xz139,11:26,720814,Wed Thu 
+yz145,21:50,395097,Mon Wed Thu 
+ab146,4:17,933989,Mon Tue Wed Thu 
+ac147,8:58,580045,Tue Wed Thu 
+ad148,5:49,635652,Tue Thu 
+ae149,18:9,412276,Mon Tue Thu 
+af156,15:48,669495,Mon Thu 
+ag157,20:52,933329,Thu 
+ah158,23:31,26474,Thu Fri 
+ai159,3:18,266751,Mon Thu Fri 
+aj167,3:19,313159,Mon Tue Thu Fri 
+ak168,16:51,435231,Tue Thu Fri 
+al169,16:45,668094,Tue Wed Thu Fri 
+am178,18:2,300778,Mon Tue Wed Thu Fri 
+an179,2:48,735128,Mon Wed Thu Fri 
+ao189,7:58,867943,Wed Thu Fri 
+ap234,20:20,117315,Wed Fri 
+aq235,22:11,217092,Mon Wed Fri 
+ar236,10:31,282176,Mon Tue Wed Fri 
+as237,6:25,675224,Tue Wed Fri 
+at238,3:24,97480,Tue Fri 
+au239,13:12,636149,Mon Tue Fri 
+av245,22:11,923022,Mon Fri 
+aw246,1:35,626318,Fri 
+ax247,18:36,980633,Fri Sat 
+ay248,4:44,886506,Mon Fri Sat 
+az249,14:0,487430,Mon Tue Fri Sat 
+bc256,7:32,28390,Tue Fri Sat 
+bd257,11:44,690489,Tue Wed Fri Sat 
+be258,23:41,599974,Mon Tue Wed Fri Sat 
+bf259,14:9,126020,Mon Wed Fri Sat 
+bg267,22:30,112004,Wed Fri Sat 
+bh268,3:43,38699,Wed Thu Fri Sat 
+bi269,16:32,827978,Mon Wed Thu Fri Sat 
+bj278,17:14,410469,Mon Tue Wed Thu Fri Sat 
+bk279,8:46,267613,Tue Wed Thu Fri Sat 
+bl289,1:43,103919,Tue Thu Fri Sat 
+bm345,14:28,396097,Mon Tue Thu Fri Sat 
+bn346,9:36,746887,Mon Thu Fri Sat 
+bo347,9:11,266647,Thu Fri Sat 
+bp348,1:52,744984,Thu Sat 
+bq349,2:50,996251,Mon Thu Sat 
+br356,18:6,437320,Mon Tue Thu Sat 
+bs357,19:38,393902,Tue Thu Sat 
+bt358,18:40,186628,Tue Wed Thu Sat 
+bu359,7:38,506137,Mon Tue Wed Thu Sat 
+bv367,16:16,778897,Mon Wed Thu Sat 
+bw368,12:7,166770,Wed Thu Sat 
+bx369,2:52,331447,Wed Sat 
+by378,23:58,118524,Mon Wed Sat 
+bz379,15:1,904955,Mon Tue Wed Sat 
+cd389,12:11,129811,Tue Wed Sat 
+ce456,13:30,977765,Tue Sat 
+cf457,13:47,856564,Mon Tue Sat 
+cg458,22:9,431703,Mon Sat 
+ch459,2:37,75742,Sat 
+ci467,6:57,538219,Sat Sun
+cj468,15:6,790163,Mon Sat Sun
+ck469,5:0,407409,Mon Tue Sat Sun
+cl478,6:31,742304,Tue Sat Sun
+cm479,17:43,905718,Tue Wed Sat Sun
+cn489,8:24,18331,Mon Tue Wed Sat Sun
+co567,4:59,426227,Mon Wed Sat Sun
+cp568,19:1,55403,Wed Sat Sun
+cq569,12:36,926968,Wed Thu Sat Sun
+cr578,10:35,13540,Mon Wed Thu Sat Sun
+cs579,22:27,917530,Mon Tue Wed Thu Sat Sun
+ct589,8:27,981407,Tue Wed Thu Sat Sun
+cu678,9:10,906698,Tue Thu Sat Sun
+cv679,5:10,978661,Mon Tue Thu Sat Sun
+cw689,13:21,994590,Mon Thu Sat Sun
+cx789,1:42,826853,Thu Sat Sun
+cy012,15:59,700938,Thu Fri Sat Sun
+cz013,21:26,421506,Mon Thu Fri Sat Sun
+de014,6:3,201466,Mon Tue Thu Fri Sat Sun
+df015,12:2,16040,Tue Thu Fri Sat Sun
+dg016,18:15,201232,Tue Wed Thu Fri Sat Sun
+dh017,15:34,999539,Mon Tue Wed Thu Fri Sat Sun
+di018,7:54,937493,Mon Wed Thu Fri Sat Sun
+dj019,14:47,450434,Wed Thu Fri Sat Sun
+dk023,2:4,81737,Wed Fri Sat Sun
+dl024,22:25,685839,Mon Wed Fri Sat Sun
+dm025,14:48,536252,Mon Tue Wed Fri Sat Sun
+dn026,15:30,104605,Tue Wed Fri Sat Sun
+do027,1:53,145031,Tue Fri Sat Sun
+dp028,4:34,229295,Mon Tue Fri Sat Sun
+dq029,3:40,754361,Mon Fri Sat Sun
+dr034,8:6,200380,Fri Sat Sun
+ds035,4:19,943037,Fri Sun
+dt036,13:20,628308,Mon Fri Sun
+du037,5:47,156982,Mon Tue Fri Sun
+dv038,15:24,548528,Tue Fri Sun
+dw039,17:13,842833,Tue Wed Fri Sun
+dx045,14:37,351126,Mon Tue Wed Fri Sun
+dy046,8:5,611118,Mon Wed Fri Sun
+dz047,3:37,543521,Wed Fri Sun
+ef048,21:28,620982,Wed Thu Fri Sun
+eg049,20:25,980568,Mon Wed Thu Fri Sun
+eh056,22:5,139017,Mon Tue Wed Thu Fri Sun
+ei057,20:59,50529,Tue Wed Thu Fri Sun
+ej058,22:28,832177,Tue Thu Fri Sun
+ek059,10:56,365525,Mon Tue Thu Fri Sun
+el067,17:22,379458,Mon Thu Fri Sun
+em068,22:52,108144,Thu Fri Sun
+en069,6:30,492959,Thu Sun
+eo078,4:43,776403,Mon Thu Sun
+ep079,11:46,316470,Mon Tue Thu Sun
+eq089,19:28,652317,Tue Thu Sun
+er123,16:12,755551,Tue Wed Thu Sun
+es124,15:27,135010,Mon Tue Wed Thu Sun
+et125,1:5,19095,Mon Wed Thu Sun
+eu126,22:22,450818,Wed Thu Sun
+ev127,10:23,377858,Wed Sun
+ew128,14:39,293237,Mon Wed Sun
+ex129,13:24,689565,Mon Tue Wed Sun
+ey134,4:40,385937,Tue Wed Sun
+ez135,10:53,817381,Tue Sun
+fg136,21:26,748202,Mon Tue Sun
+fh137,1:2,286338,Mon Sun
+fi138,22:13,46155,Sun
+fj139,4:10,383033,
+fk145,22:58,809511,Mon 
+fl146,8:13,503811,Mon Tue 
+fm147,20:26,762067,Tue 
+fn148,13:51,906535,Tue Wed 
+fo149,2:56,206634,Mon Tue Wed 
+fp156,2:23,94203,Mon Wed 
+fq157,14:56,600294,Wed 
+fr158,19:32,224490,Wed Thu 
+fs159,4:15,743335,Mon Wed Thu 
+ft167,13:28,718209,Mon Tue Wed Thu 
+fu168,16:3,27374,Tue Wed Thu 
+fv169,12:26,410443,Tue Thu 
+fw178,14:13,393701,Mon Tue Thu 
+fx179,15:35,278336,Mon Thu 
+fy189,22:51,739749,Thu 
+fz234,9:15,318285,Thu Fri 
+gh235,21:47,921300,Mon Thu Fri 
+gi236,21:40,642345,Mon Tue Thu Fri 
+gj237,15:50,361602,Tue Thu Fri 
+gk238,2:43,102605,Tue Wed Thu Fri 
+gl239,18:46,63288,Mon Tue Wed Thu Fri 
+gm245,11:53,412321,Mon Wed Thu Fri 
+gn246,15:46,389859,Wed Thu Fri 
+go247,22:24,356655,Wed Fri 
+gp248,8:58,890338,Mon Wed Fri 
+gq249,1:16,14056,Mon Tue Wed Fri 
+gr256,4:17,325080,Tue Wed Fri 
+gs257,2:9,113558,Tue Fri 
+gt258,6:49,803981,Mon Tue Fri 
+gu259,23:3,56565,Mon Fri 
+gv267,11:21,887724,Fri 
+gw268,17:20,835026,Fri Sat 
+gx269,18:46,533568,Mon Fri Sat 
+gy278,8:23,302313,Mon Tue Fri Sat 
+gz279,19:58,49445,Tue Fri Sat 
+hi289,7:58,46278,Tue Wed Fri Sat 
+hj345,10:14,495611,Mon Tue Wed Fri Sat 
+hk346,17:31,121053,Mon Wed Fri Sat 
+hl347,15:30,852693,Wed Fri Sat 
+hm348,16:11,296548,Wed Thu Fri Sat 
+hn349,17:42,654275,Mon Wed Thu Fri Sat 
+ho356,3:49,609117,Mon Tue Wed Thu Fri Sat 
+hp357,16:45,384239,Tue Wed Thu Fri Sat 
+hq358,12:27,468029,Tue Thu Fri Sat 
+hr359,7:31,722057,Mon Tue Thu Fri Sat 
+hs367,18:32,334499,Mon Thu Fri Sat 
+ht368,6:26,736946,Thu Fri Sat 
+hu369,2:46,970669,Thu Sat 
+hv378,12:0,253255,Mon Thu Sat 
+hw379,13:24,47129,Mon Tue Thu Sat 
+hx389,5:59,819374,Tue Thu Sat 
+hy456,23:28,115254,Tue Wed Thu Sat 
+hz457,13:8,865794,Mon Tue Wed Thu Sat 
+ij458,18:50,908553,Mon Wed Thu Sat 
+ik459,2:33,562799,Wed Thu Sat 
+il467,23:32,403100,Wed Sat 
+im468,16:54,4258,Mon Wed Sat 
+in469,20:5,100326,Mon Tue Wed Sat 
+io478,19:41,403535,Tue Wed Sat 
+ip479,17:27,213424,Tue Sat 
+iq489,3:37,777197,Mon Tue Sat 
+ir567,18:40,263886,Mon Sat 
+is568,23:16,900590,Sat 
+it569,19:54,756916,Sat Sun
+iu578,4:36,28731,Mon Sat Sun
+iv579,22:58,717562,Mon Tue Sat Sun
+iw589,21:53,922473,Tue Sat Sun
+ix678,8:41,760672,Tue Wed Sat Sun
+iy679,10:49,915073,Mon Tue Wed Sat Sun
+iz689,20:19,985422,Mon Wed Sat Sun
+jk789,12:35,557243,Wed Sat Sun
+jl012,10:46,295075,Wed Thu Sat Sun
+jm013,17:7,359984,Mon Wed Thu Sat Sun
+jn014,13:24,611400,Mon Tue Wed Thu Sat Sun
+jo015,1:36,376840,Tue Wed Thu Sat Sun
+jp016,3:9,966794,Tue Thu Sat Sun
+jq017,5:46,299874,Mon Tue Thu Sat Sun
+jr018,3:12,848377,Mon Thu Sat Sun
+js019,9:46,766719,Thu Sat Sun
+jt023,16:50,80315,Thu Fri Sat Sun
+ju024,23:9,513082,Mon Thu Fri Sat Sun
+jv025,14:39,500335,Mon Tue Thu Fri Sat Sun
+jw026,22:56,172561,Tue Thu Fri Sat Sun
+jx027,20:41,329174,Tue Wed Thu Fri Sat Sun
+jy028,14:16,662813,Mon Tue Wed Thu Fri Sat Sun
+jz029,8:55,34204,Mon Wed Thu Fri Sat Sun
+kl034,16:56,418909,Wed Thu Fri Sat Sun
+km035,3:24,519509,Wed Fri Sat Sun
+kn036,23:31,43949,Mon Wed Fri Sat Sun
+ko037,20:4,261329,Mon Tue Wed Fri Sat Sun
+kp038,16:25,491385,Tue Wed Fri Sat Sun
+kq039,7:33,118551,Tue Fri Sat Sun
+kr045,4:20,718727,Mon Tue Fri Sat Sun
+ks046,18:11,552136,Mon Fri Sat Sun
+kt047,5:2,145838,Fri Sat Sun
+ku048,10:14,128591,Fri Sun
+kv049,22:26,165616,Mon Fri Sun
+kw056,3:8,961037,Mon Tue Fri Sun
+kx057,9:31,639919,Tue Fri Sun
+ky058,3:27,65623,Tue Wed Fri Sun
+kz059,19:13,763966,Mon Tue Wed Fri Sun
+lm067,9:48,755627,Mon Wed Fri Sun
+ln068,6:50,359308,Wed Fri Sun
+lo069,9:14,202824,Wed Thu Fri Sun
+lp078,19:59,89022,Mon Wed Thu Fri Sun
+lq079,5:0,467537,Mon Tue Wed Thu Fri Sun
+lr089,22:35,478515,Tue Wed Thu Fri Sun
+ls123,16:35,232699,Tue Thu Fri Sun
+lt124,12:7,537369,Mon Tue Thu Fri Sun
+lu125,22:56,884058,Mon Thu Fri Sun
+lv126,9:40,283177,Thu Fri Sun
+lw127,15:23,499242,Thu Sun
+lx128,14:48,241912,Mon Thu Sun
+ly129,8:50,918708,Mon Tue Thu Sun
+lz134,4:39,173652,Tue Thu Sun
+mn135,18:18,865528,Tue Wed Thu Sun
+mo136,15:29,895235,Mon Tue Wed Thu Sun
+mp137,10:50,421519,Mon Wed Thu Sun
+mq138,8:0,125302,Wed Thu Sun
+mr139,4:39,516768,Wed Sun
+ms145,6:57,812359,Mon Wed Sun
+mt146,3:54,353502,Mon Tue Wed Sun
+mu147,3:53,678366,Tue Wed Sun
+mv148,16:38,736034,Tue Sun
+mw149,21:13,246412,Mon Tue Sun
+mx156,6:8,149051,Mon Sun
+my157,11:5,156357,Sun
+mz158,16:12,822592,
+no159,12:41,326876,Mon 
+np167,8:43,664078,Mon Tue 
+nq168,14:32,687727,Tue 
+nr169,3:59,289124,Tue Wed 
+ns178,10:45,261341,Mon Tue Wed 
+nt179,7:17,160020,Mon Wed 
+nu189,18:18,745665,Wed 
+nv234,17:54,45882,Wed Thu 
+nw235,8:30,775148,Mon Wed Thu 
+nx236,8:6,941918,Mon Tue Wed Thu 
+ny237,15:56,765191,Tue Wed Thu 
+nz238,5:21,980385,Tue Thu 
+op239,1:53,924220,Mon Tue Thu 
+oq245,21:10,686713,Mon Thu 
+or246,12:35,421466,Thu 
+os247,18:26,9575,Thu Fri 
+ot248,22:8,333962,Mon Thu Fri 
+ou249,23:5,827617,Mon Tue Thu Fri 
+ov256,3:46,611543,Tue Thu Fri 
+ow257,17:56,453165,Tue Wed Thu Fri 
+ox258,3:27,262330,Mon Tue Wed Thu Fri 
+oy259,4:15,312050,Mon Wed Thu Fri 
+oz267,1:52,722003,Wed Thu Fri 
+pq268,9:36,94444,Wed Fri 
+pr269,19:46,571316,Mon Wed Fri 
+ps278,13:58,703147,Mon Tue Wed Fri 
+pt279,18:14,199145,Tue Wed Fri 
+pu289,22:9,266823,Tue Fri 
+pv345,22:47,140442,Mon Tue Fri 
+pw346,3:27,884355,Mon Fri 
+px347,6:50,216538,Fri 
+py348,21:29,850091,Fri Sat 
+pz349,7:27,932500,Mon Fri Sat 
+qr356,7:0,410445,Mon Tue Fri Sat 
+qs357,11:7,133897,Tue Fri Sat 
+qt358,5:0,573248,Tue Wed Fri Sat 
+qu359,16:30,679278,Mon Tue Wed Fri Sat 
+qv367,10:37,74401,Mon Wed Fri Sat 
+qw368,14:35,17271,Wed Fri Sat 
+qx369,17:51,304154,Wed Thu Fri Sat 
+qy378,5:38,547387,Mon Wed Thu Fri Sat 
+qz379,7:44,44329,Mon Tue Wed Thu Fri Sat 
+rs389,23:54,488145,Tue Wed Thu Fri Sat 
+rt456,2:41,883293,Tue Thu Fri Sat 
+ru457,23:26,652759,Mon Tue Thu Fri Sat 
+rv458,8:22,675710,Mon Thu Fri Sat 
+rw459,9:52,591061,Thu Fri Sat 
+rx467,12:6,878455,Thu Sat 
+ry468,6:5,600592,Mon Thu Sat 
+rz469,1:4,981224,Mon Tue Thu Sat 
+st478,11:12,797545,Tue Thu Sat 
+su479,10:50,612003,Tue Wed Thu Sat 
+sv489,12:26,272635,Mon Tue Wed Thu Sat 
+sw567,7:51,34073,Mon Wed Thu Sat 
+sx568,19:31,138522,Wed Thu Sat 
+sy569,6:13,735797,Wed Sat 
+sz578,7:42,382396,Mon Wed Sat 
+tu579,10:56,519568,Mon Tue Wed Sat 
+tv589,23:24,574029,Tue Wed Sat 
+tw678,3:40,622483,Tue Sat 
+tx679,11:5,797257,Mon Tue Sat 
+ty689,6:34,560241,Mon Sat 
+tz789,5:44,877383,Sat 
+uv012,11:10,842152,Sat Sun
+uw013,12:41,444635,Mon Sat Sun
+ux014,18:59,147486,Mon Tue Sat Sun
+uy015,3:40,368492,Tue Sat Sun
+uz016,14:48,849998,Tue Wed Sat Sun
+vw017,5:34,383949,Mon Tue Wed Sat Sun
+vx018,2:11,969550,Mon Wed Sat Sun
+vy019,7:1,764483,Wed Sat Sun
+vz023,3:40,250348,Wed Thu Sat Sun
+wx024,13:42,416828,Mon Wed Thu Sat Sun
+wy025,8:54,315120,Mon Tue Wed Thu Sat Sun
+wz026,19:3,872399,Tue Wed Thu Sat Sun
+xy027,15:32,102525,Tue Thu Sat Sun
+xz028,18:11,581188,Mon Tue Thu Sat Sun
+yz029,23:2,426314,Mon Thu Sat Sun
+ab034,5:35,362136,Thu Sat Sun
+ac035,11:23,568468,Thu Fri Sat Sun
+ad036,14:12,719957,Mon Thu Fri Sat Sun
+ae037,20:38,295093,Mon Tue Thu Fri Sat Sun
+af038,23:39,461451,Tue Thu Fri Sat Sun
+ag039,3:40,490743,Tue Wed Thu Fri Sat Sun
+ah045,14:6,614570,Mon Tue Wed Thu Fri Sat Sun
+ai046,23:50,698356,Mon Wed Thu Fri Sat Sun
+aj047,3:32,591002,Wed Thu Fri Sat Sun
+ak048,9:47,953571,Wed Fri Sat Sun
+al049,2:15,497226,Mon Wed Fri Sat Sun
+am056,4:17,815261,Mon Tue Wed Fri Sat Sun
+an057,4:22,727529,Tue Wed Fri Sat Sun
+ao058,20:53,546303,Tue Fri Sat Sun
+ap059,9:3,470153,Mon Tue Fri Sat Sun
+aq067,15:6,492969,Mon Fri Sat Sun
+ar068,3:10,894932,Fri Sat Sun
+as069,7:22,163185,Fri Sun
+at078,14:56,350326,Mon Fri Sun
+au079,2:31,72874,Mon Tue Fri Sun
+av089,4:30,822087,Tue Fri Sun
+aw123,4:31,70631,Tue Wed Fri Sun
+ax124,18:58,995581,Mon Tue Wed Fri Sun
+ay125,7:4,658217,Mon Wed Fri Sun
+az126,7:35,157544,Wed Fri Sun
