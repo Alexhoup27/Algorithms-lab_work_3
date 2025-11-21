@@ -152,27 +152,22 @@ Record make_record(std::string line){
 Record* insert_sort_arr(Record* data, int _len){ // Need tests
     Record* new_data = new Record[_len];
     int count = 0;
-    for (int i =0; i<_len; i++) {
-        bool flag=true;
-        int j =1;
-        for (j; j<i; j++){
-            if (data[i].cost < new_data[j].cost &&\
-            data[i].cost >= new_data[j-1].cost){
-                for (int k =j+1; k < count; k++){
-                    data[k] = data[k-1];
-                }
-                new_data[j] = data[i];
-                flag= false;
-                count++;
+    for(int i= 0; i < _len; i++){
+        int ind  = -1;
+        for(int j =0; j < count; j ++){
+            if(new_data[j].cost > data[i].cost){
+                ind= j;
                 break;
             }
         }
-        if (flag){
-            for (int k =j+1; k < count; k++){
-                data[k] = data[k-1];
+        if (ind != -1){
+            for(int j=count-1; j >= ind; j++){
+                new_data[j +1] = new_data[j];
             }
-            new_data[j] = data[i];
-            flag= false;
+            new_data[ind] = data[i];
+            count++;
+        }else {
+            new_data[count] = data[i];
             count++;
         }
     }
@@ -202,6 +197,25 @@ Record* shell_sort_arr(Record* data, int _len){ // need to test
     return data;
 }
 
+std::vector<Record> insert_sort_vec(std::vector<Record> data){ // need to test
+    std::vector<Record> new_data;
+    for (int i = 0; i < data.size(); i++){
+        new_data.push_back(data[i]);
+        int ind = -1;
+        for(int j = 0; j < new_data.size(); j ++) {
+            if (data[i].cost < new_data[j].cost){
+                ind = j;
+                break;
+            }
+        }
+        if (ind != -1){
+            for(int j = data.size()-1; j > ind; j--){
+                new_data[j-1] = new_data[j];
+            }
+        }
+    }
+    return new_data;
+}
 
 int main(){
     std::string root_to_input_file;
@@ -226,7 +240,7 @@ int main(){
     reader = make_reader(root_to_input_file);
     start_time = clock();
     while (std::getline(reader.reader, line)){
-        // Record to_add = make_record(line);
+        Record to_add = make_record(line);
         data.push_back(make_record(line));
     }
     end_time = clock();
