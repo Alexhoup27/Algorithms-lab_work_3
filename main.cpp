@@ -121,7 +121,7 @@ MadeReader make_reader(std::string root_to_input_file){
     if (std::getline(reader, line_n)){
         n = std::stoi(line_n);
     }else{
-        throw std::invalid_argument( "Wrong file!🤘" );
+        throw std::invalid_argument( "Wrong file!" );
     }
     to_return.reader = std::move(reader);
     to_return._len = n;
@@ -149,7 +149,7 @@ Record make_record(std::string line){
     return to_return;
 }
 
-Record* insert_sort_arr(Record* data, int _len){ // Should to bee test
+Record* insert_sort_arr(Record* data, int _len){ // Need tests
     Record* new_data = new Record[_len];
     int count = 0;
     for (int i =0; i<_len; i++) {
@@ -178,6 +178,30 @@ Record* insert_sort_arr(Record* data, int _len){ // Should to bee test
     }
     return new_data;
 }
+
+Record* shell_sort_arr(Record* data, int _len){ // need to test
+    for (int i=_len/2; i >= _len; i /= 2){
+        std::vector<int> indeces;
+        for (int j =0; j <i; j++){
+            indeces.push_back(j);
+            int count = 1;
+            while (j + count * i < _len-1){
+                indeces.push_back(j + count * i);
+                count++;
+            }
+            Record* to_sort = new Record[count];
+            for (int k= 0; k < count; k ++){
+                to_sort[k] = data[indeces[k]];
+            }
+            to_sort = insert_sort_arr(to_sort, count);
+            for (int k= 0; k < count; k ++){
+                 data[indeces[k]] = to_sort[k];
+            }
+        }
+    }
+    return data;
+}
+
 
 int main(){
     std::string root_to_input_file;
