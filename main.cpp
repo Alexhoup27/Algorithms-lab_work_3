@@ -239,7 +239,7 @@ std::vector<Record> shell_sort_vec(std::vector<Record> data){ // need tests
     return data;
 }
 
-std::pair<int, std::vector<Record>> partition(std::vector<Record> data,int left, int right){
+std::pair<int, std::vector<Record>> partition_vec(std::vector<Record> data,int left, int right){
     Record start = data[(left + right) / 2];
     int i = left;
     int j = right;
@@ -269,7 +269,7 @@ std::vector<Record> qsort_vec(std::vector<Record> data, int left, int right){
         if (left_right.second<= left_right.first) {
             continue;
         }
-        std::pair<int, std::vector<Record>>  now_part = partition(data, left_right.first, left_right.second);
+        std::pair<int, std::vector<Record>>  now_part = partition_vec(data, left_right.first, left_right.second);
         int i = now_part.first;
         data = now_part.second;
         if(i - left_right.first > left_right.second - i){
@@ -283,6 +283,49 @@ std::vector<Record> qsort_vec(std::vector<Record> data, int left, int right){
     return data;
 }
 
+std::pair<int, Record*> partition_arr(Record* data, int left, int right){
+    Record start = data[(left + right) / 2];
+    int i = left;
+    int j = right;
+    while(i<= j){
+        while (data[i].cost < start.cost){
+            i++;
+        }
+        while(data[j].cost > start.cost){
+            j--;
+        }
+        if (i >= j){
+            break;
+        }
+        Record to_swap = data[i];
+        data[i] = data[j];
+        data[j] = to_swap;
+    }
+    return {j, data};
+}
+
+Record* qsort_arr(Record* data, int left, int right){
+    std::stack<std::pair<int, int>> moves;
+    moves.push({left, right});
+    while(moves.empty() == false){
+        std::pair<int, int> left_right = moves.top();
+        moves.pop();
+        if (left_right.second<= left_right.first) {
+            continue;
+        }
+        std::pair<int, Record*>  now_part = partition_arr(data, left_right.first, left_right.second);
+        int i = now_part.first;
+        data = now_part.second;
+        if(i - left_right.first > left_right.second - i){
+            moves.push({left_right.first, i - 1});
+            moves.push({i+1, left_right.second});
+        }else{
+            moves.push({i+1, left_right.second});
+            moves.push({left_right.first, i - 1});
+        }
+    }
+    return data;
+}
 
 int main(){
     std::string root_to_input_file;
