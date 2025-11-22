@@ -217,6 +217,29 @@ std::vector<Record> insert_sort_vec(std::vector<Record> data){ // need to test
     return new_data;
 }
 
+std::vector<Record> shell_sort_vec(std::vector<Record> data){ // need tests
+    for (int i = data.size() / 2; i >= 1; i /=2){
+        std::vector<int> indices;
+        for (int j =0; j <i; j++) {
+            indices.push_back(j);
+            int count = 1;
+            while (j + count * i < data.size() - 1) {
+                indices.push_back(j + count * i);
+                count++;
+            }
+            std::vector<Record> to_sort;
+            for (int k= 0; k < count; k ++){
+                to_sort.push_back(data[indices[k]]);
+            }
+            to_sort = insert_sort_vec(to_sort);
+            for (int k= 0; k < count; k ++){
+                data[indices[k]] = to_sort[k];
+            }
+        }
+    }
+    return data;
+}
+
 int main(){
     std::string root_to_input_file;
     std::cout<<"Enter file name(start from disk)"<<std::endl;
