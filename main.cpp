@@ -102,6 +102,31 @@ std::vector<std::string> split(std::string line, char delim){
     return to_return;
 }
 
+std::string make_string_from_Record(Record data){
+    std::string result;
+    result += data.flight_number.airport;
+    result += std::to_string(data.flight_number.id);
+    result += std::to_string(data.time.hh) +":"\
+    + std::to_string(data.time.mm);
+    result += std::to_string(data.cost);
+    for (std::string elem: data.departure_days){
+        result += elem + " ";
+    }
+    return result;
+}
+
+void print_arr(Record* data, int _len){
+    for (int i = 0; i < _len; i++){
+        std::cout<<make_string_from_Record(data[i]) << std::endl;
+    }
+}
+
+void print_vec(std::vector<Record>data){
+    for(Record elem: data){
+        std::cout<<make_string_from_Record(elem)<<std::endl;
+    }
+}
+
 bool is_sorted_arr(Record* data, int _len){
     for (int i =1; i < _len; i++){
         if (data[i].cost < data[i-1].cost){
@@ -363,6 +388,10 @@ int main(){
     }
     end_time = clock();
     std::cout<<"Time of add to vector: "<<end_time - start_time<<std::endl;
+    start_time = clock();
     auto sorted_arr = shell_sort_arr(raw_arr, reader._len);
+    end_time = clock();
+    std::cout<<"Time ot shell_sort for array: " << end_time - start_time<<std::endl;
+    std::cout<<is_sorted_arr(sorted_arr, reader._len)<<std::endl;//work wrong!
     return 0;
 }
