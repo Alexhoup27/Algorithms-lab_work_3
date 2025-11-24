@@ -346,6 +346,7 @@ Record* qsort_arr(Record* data, int left, int right){
     std::stack<std::pair<int, int>> moves;
     moves.push({left, right});
     while(moves.empty() == false){
+//        std::cout<<"Here"<<std::endl;
         std::pair<int, int> left_right = moves.top();
         moves.pop();
         if (left_right.second<= left_right.first) {
@@ -399,12 +400,26 @@ int main(){
     end_time = clock();
     std::cout<<"Time to shell_sort for array: " << end_time - start_time<<std::endl;
     std::cout<<is_sorted_arr(sorted_arr, reader._len)<<std::endl;//work wrong!
-    print_arr(sorted_arr, reader._len);
-    start_time = clock();
+//    print_arr(sorted_arr, reader._len);
     std::cout<<"------------------------------"<<std::endl;
+    start_time = clock();
     auto sorted_vec = shell_sort_vec(data);
     end_time = clock();
     std::cout<<"Time to shell_sort for vector: " << end_time - start_time<<std::endl;
-    print_vec(sorted_vec);
+//    print_vec(sorted_vec);
+    std::cout<<"------------------------------"<<std::endl;
+    start_time = clock();
+    sorted_arr = qsort_arr(raw_arr,0 ,reader._len-1);
+    end_time = clock();
+    std::cout<<"Time to qsort for array: " << end_time - start_time<<std::endl;
+    std::cout<<is_sorted_arr(sorted_arr, reader._len)<<std::endl;//work wrong!
+//    print_arr(sorted_arr, reader._len);
+    std::cout<<"------------------------------"<<std::endl;
+    start_time = clock();
+    sorted_vec = qsort_vec(data,0 ,data.size()-1);
+    end_time = clock();
+    std::cout<<"Time to qsort for vec: " << end_time - start_time<<std::endl;
+    std::cout<<is_sorted_vec(sorted_vec)<<std::endl;//work wrong!
+//    print_vec(sorted_vec);
     return 0;
 }
