@@ -102,10 +102,18 @@ std::vector<std::string> split(std::string line, char delim){
     return to_return;
 }
 
-bool is_sorted(Record data[], int _len){
-    for (int i =1;i < _len; i++){
+bool is_sorted_arr(Record* data, int _len){
+    for (int i =1; i < _len; i++){
         if (data[i].cost < data[i-1].cost){
-            print_data_around_ind(data, i);
+            return false;
+        }
+    }
+    return true;
+}
+
+bool is_sorted_vec(std::vector<Record> data){
+    for (int i =1; i< data.size(); i ++){
+        if (data[i].cost  < data[i-1].cost){
             return false;
         }
     }
@@ -355,5 +363,6 @@ int main(){
     }
     end_time = clock();
     std::cout<<"Time of add to vector: "<<end_time - start_time<<std::endl;
+    auto sorted_arr = shell_sort_arr(raw_arr, reader._len);
     return 0;
 }
