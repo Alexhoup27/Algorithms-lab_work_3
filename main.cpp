@@ -86,7 +86,7 @@ std::string slice(std::string data, int first_ind, int second_ind){
     if (first_ind < 0){
         std::cout<<"First ind error";
     }
-    for (int ind = first_ind; first_ind < second_ind; first_ind ++){
+    for (int ind = first_ind; ind < second_ind; ind ++){
         result += data[ind];
     }
     return result;
@@ -105,10 +105,10 @@ std::vector<std::string> split(std::string line, char delim){
 std::string make_string_from_Record(Record data){
     std::string result;
     result += data.flight_number.airport;
-    result += std::to_string(data.flight_number.id);
+    result += std::to_string(data.flight_number.id) + " ";
     result += std::to_string(data.time.hh) +":"\
-    + std::to_string(data.time.mm);
-    result += std::to_string(data.cost);
+    + std::to_string(data.time.mm) + " ";
+    result += std::to_string(data.cost) + " ";
     for (std::string elem: data.departure_days){
         result += elem + " ";
     }
@@ -193,7 +193,7 @@ Record* insert_sort_arr(Record* data, int _len){ // Need tests
             }
         }
         if (ind != -1){
-            for(int j=count-1; j >= ind; j++){
+            for(int j=count-1; j >= ind; j--){
                 new_data[j +1] = new_data[j];
             }
             new_data[ind] = data[i];
@@ -207,12 +207,12 @@ Record* insert_sort_arr(Record* data, int _len){ // Need tests
 }
 
 Record* shell_sort_arr(Record* data, int _len){ // need to test
-    for (int i=_len/2; i >= _len; i /= 2){
+    for (int i=_len/2; i >= 1; i /= 2){
         std::vector<int> indeces;
         for (int j =0; j <i; j++){
             indeces.push_back(j);
             int count = 1;
-            while (j + count * i < _len-1){
+            while (j + count * i <= _len-1){
                 indeces.push_back(j + count * i);
                 count++;
             }
@@ -221,15 +221,17 @@ Record* shell_sort_arr(Record* data, int _len){ // need to test
                 to_sort[k] = data[indeces[k]];
             }
             to_sort = insert_sort_arr(to_sort, count);
+//            print_arr(to_sort, count);
             for (int k= 0; k < count; k ++){
                  data[indeces[k]] = to_sort[k];
             }
+            indeces.clear();
         }
     }
     return data;
 }
 
-std::vector<Record> insert_sort_vec(std::vector<Record> data){ // need to test
+std::vector<Record> insert_sort_vec(std::vector<Record> data){
     std::vector<Record> new_data;
     for (int i = 0; i < data.size(); i++){
         new_data.push_back(data[i]);
@@ -241,8 +243,10 @@ std::vector<Record> insert_sort_vec(std::vector<Record> data){ // need to test
             }
         }
         if (ind != -1){
-            for(int j = data.size()-1; j > ind; j--){
+            for(int j = new_data.size()-1; j > ind; j--){
+                Record to_swap = new_data[j-1];
                 new_data[j-1] = new_data[j];
+                new_data[j] = to_swap;
             }
         }
     }
@@ -255,18 +259,19 @@ std::vector<Record> shell_sort_vec(std::vector<Record> data){ // need tests
         for (int j =0; j <i; j++) {
             indices.push_back(j);
             int count = 1;
-            while (j + count * i < data.size() - 1) {
+            while (j + count * i <= data.size() - 1) {
                 indices.push_back(j + count * i);
                 count++;
             }
             std::vector<Record> to_sort;
-            for (int k= 0; k < count; k ++){
+            for (int k = 0; k < count; k++) {
                 to_sort.push_back(data[indices[k]]);
             }
             to_sort = insert_sort_vec(to_sort);
-            for (int k= 0; k < count; k ++){
+            for (int k = 0; k < count; k++) {
                 data[indices[k]] = to_sort[k];
             }
+            indices.clear();
         }
     }
     return data;
@@ -363,7 +368,7 @@ Record* qsort_arr(Record* data, int left, int right){
 int main(){
     std::string root_to_input_file;
     std::cout<<"Enter file name(start from disk)"<<std::endl;
-    //C:\Users\Alexandr\CLionProjects\Lab_work3\sorted_output.txt
+    //C:\Users\Alexandr\CLionProjects\Lab_work3\little.txt
     std::cin>>root_to_input_file;
     std::cout<<root_to_input_file<<std::endl;
     std::string line_n;
@@ -379,6 +384,7 @@ int main(){
     }
     auto end_time = clock();
     std::cout<<"Time of add to dinamyc arr: "<<end_time - start_time<<std::endl;
+//    print_arr(raw_arr, reader._len);
     std::vector<Record> data;
     reader = make_reader(root_to_input_file);
     start_time = clock();
@@ -391,7 +397,14 @@ int main(){
     start_time = clock();
     auto sorted_arr = shell_sort_arr(raw_arr, reader._len);
     end_time = clock();
-    std::cout<<"Time ot shell_sort for array: " << end_time - start_time<<std::endl;
+    std::cout<<"Time to shell_sort for array: " << end_time - start_time<<std::endl;
     std::cout<<is_sorted_arr(sorted_arr, reader._len)<<std::endl;//work wrong!
+    print_arr(sorted_arr, reader._len);
+    start_time = clock();
+    std::cout<<"------------------------------"<<std::endl;
+    auto sorted_vec = shell_sort_vec(data);
+    end_time = clock();
+    std::cout<<"Time to shell_sort for vector: " << end_time - start_time<<std::endl;
+    print_vec(sorted_vec);
     return 0;
 }
