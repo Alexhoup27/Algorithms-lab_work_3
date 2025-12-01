@@ -32,6 +32,24 @@ struct Record{
     std::vector<std::string> departure_days;
 };
 
+struct ToReturnVec{
+    std::vector<Record> data;
+    long long int perm_count;
+    long long int comp_count;
+};
+
+struct ToReturnArr{
+    Record* data;
+    long long int perm_count;
+    long long int comp_count;
+};
+
+struct ToReturnQ{
+    long long int ind;
+    long long int perm_count;
+    long long int comp_count;
+};
+
 template< typename T >
 std::vector<T> reversed(std::vector<T> data){
     std::vector<T> to_return(data);
@@ -182,8 +200,10 @@ Record make_record(std::string line){
     return to_return;
 }
 
-Record* insert_sort_arr(Record* data, int _len){ // Need tests
+ToReturnArr insert_sort_arr(Record* data, int _len){
     Record* new_data = new Record[_len];
+    long long int comp_count = 0;
+    long long int perm_count = 0;
     int count = 0;
     for(int i= 0; i < _len; i++){
         int ind  = -1;
@@ -192,22 +212,32 @@ Record* insert_sort_arr(Record* data, int _len){ // Need tests
                 ind= j;
                 break;
             }
+            comp_count++;
         }
         if (ind != -1){
             for(int j=count-1; j >= ind; j--){
                 new_data[j +1] = new_data[j];
+                perm_count ++;
             }
             new_data[ind] = data[i];
+            perm_count++;
             count++;
         }else {
             new_data[count] = data[i];
             count++;
         }
+        comp_count++;
     }
-    return new_data;
+    ToReturnArr to_return;
+    to_return.data = new_data;
+    to_return.perm_count = perm_count;
+    to_return.comp_count = comp_count;
+    return to_return;
 }
 
-Record* shell_sort_arr(Record* data, int _len){ // need to test
+Record* shell_sort_arr(Record* data, int _len){
+    long long int comp_count = 0;
+    long long int perm_count = 0;
     for (int i=_len/2; i >= 1; i /= 2){
         std::vector<int> indeces;
         for (int j =0; j <i; j++){
@@ -219,21 +249,30 @@ Record* shell_sort_arr(Record* data, int _len){ // need to test
             }
             Record* to_sort = new Record[count];
             for (int k= 0; k < count; k ++){
+                perm_count++;
                 to_sort[k] = data[indeces[k]];
             }
-            to_sort = insert_sort_arr(to_sort, count);
+            auto from_insert = insert_sort_arr(to_sort, count);
+            to_sort = from_insert.data;
+            perm_count += from_insert.perm_count;
+            comp_count += from_insert.comp_count;
 //            print_arr(to_sort, count);
             for (int k= 0; k < count; k ++){
                  data[indeces[k]] = to_sort[k];
+                 perm_count++;
             }
             indeces.clear();
         }
     }
+    std::cout<<"Count of compression: "<<comp_count<<std::endl;
+    std::cout<<"Count of permutations: "<<perm_count<<std::endl;
     return data;
 }
 
-std::vector<Record> insert_sort_vec(std::vector<Record> data){
+ToReturnVec insert_sort_vec(std::vector<Record> data){
     std::vector<Record> new_data;
+    long long int comp_count = 0;
+    long long int perm_count = 0;
     for (int i = 0; i < data.size(); i++){
         new_data.push_back(data[i]);
         int ind = -1;
@@ -242,19 +281,28 @@ std::vector<Record> insert_sort_vec(std::vector<Record> data){
                 ind = j;
                 break;
             }
+            comp_count ++;
         }
         if (ind != -1){
             for(int j = new_data.size()-1; j > ind; j--){
                 Record to_swap = new_data[j-1];
                 new_data[j-1] = new_data[j];
                 new_data[j] = to_swap;
+                perm_count ++;
             }
         }
+        comp_count++;
     }
-    return new_data;
+    ToReturnVec to_return;
+    to_return.data = new_data;
+    to_return.comp_count = comp_count;
+    to_return.perm_count = perm_count;
+    return to_return;
 }
 
-std::vector<Record> shell_sort_vec(std::vector<Record> data){ // need tests
+std::vector<Record> shell_sort_vec(std::vector<Record> data){
+    long long int comp_count = 0;
+    long long int perm_count = 0;
     for (int i = data.size() / 2; i >= 1; i /=2){
         std::vector<int> indices;
         for (int j =0; j <i; j++) {
@@ -268,35 +316,25 @@ std::vector<Record> shell_sort_vec(std::vector<Record> data){ // need tests
             for (int k = 0; k < count; k++) {
                 to_sort.push_back(data[indices[k]]);
             }
-            to_sort = insert_sort_vec(to_sort);
+            ToReturnVec returned = insert_sort_vec(to_sort);
+            to_sort = returned.data;
+            comp_count += returned.comp_count;
+            perm_count += returned.perm_count;
             for (int k = 0; k < count; k++) {
                 data[indices[k]] = to_sort[k];
+                perm_count++;
             }
             indices.clear();
         }
     }
+    std::cout<<"Count of compression: "<<comp_count<<std::endl;
+    std::cout<<"Count of permutations: "<<perm_count<<std::endl;
     return data;
 }
 
-
-int partition_lomuto(std::vector<Record>& data, int low, int high) {
-    int pivot_cost = data[high].cost; // Опорный элемент - последний
-    int i = (low - 1);                 // Индекс меньшего элемента
-
-    for (int j = low; j <= high - 1; j++) {
-        // Если текущий элемент меньше или равен опорному
-        if (data[j].cost <= pivot_cost) {
-            i++;
-            std::swap(data[i], data[j]); // Меняем элементы местами
-        }
-    }
-    // Ставим опорный элемент (data[high]) на его правильное место (data[i + 1])
-    std::swap(data[i + 1], data[high]);
-    return (i + 1); // Возвращаем индекс опорного элемента
-}
-
-
-std::pair<int, Record*> partition_arr(Record* data, int left, int right){
+ToReturnQ partition_arr(Record*& data, int left, int right){
+    long long int comp_count = 0;
+    long long int perm_count = 0;
     Record start = data[(left + right) / 2];
     int i = left;
     int j = right;
@@ -310,14 +348,23 @@ std::pair<int, Record*> partition_arr(Record* data, int left, int right){
         if (i >= j) {
             break;
         }
+        comp_count++;
         Record to_swap = data[i];
         data[i] = data[j];
         data[j] = to_swap;
+        perm_count++;
     }
-    return {j, data};
+    ToReturnQ to_return;
+    to_return.ind = j;
+    to_return.perm_count = perm_count;
+    to_return.comp_count = comp_count;
+
+    return to_return;
 }
 
-Record* qsort_arr(Record* data, int left, int right){
+void qsort_arr(Record*& data, int left, int right){
+    long long int comp_count = 0;
+    long long int perm_count = 0;
     std::stack<std::pair<int, int>> moves;
     moves.push({left, right});
     while(moves.empty() == false){
@@ -326,9 +373,11 @@ Record* qsort_arr(Record* data, int left, int right){
         if (left_right.second<= left_right.first) {
             continue;
         }
-        std::pair<int, Record*>  now_part = partition_arr(data, left_right.first, left_right.second);
-        int i = now_part.first;
-        data = now_part.second;
+        comp_count ++;
+        ToReturnQ new_data = partition_arr(data, left_right.first, left_right.second);
+        long long int i = new_data.ind;
+        perm_count += new_data.perm_count;
+        comp_count += new_data.comp_count;
         if(i - left_right.first > left_right.second - i){
             moves.push({left_right.first, i - 1});
             moves.push({i+1, left_right.second});
@@ -336,11 +385,15 @@ Record* qsort_arr(Record* data, int left, int right){
             moves.push({i+1, left_right.second});
             moves.push({left_right.first, i - 1});
         }
+        comp_count ++;
     }
-    return data;
+    std::cout<<"Count of compression: "<<comp_count<<std::endl;
+    std::cout<<"Count of permutations: "<<perm_count<<std::endl;
 }
 
-int new_partition(std::vector<Record>& data, int left, int right){
+ToReturnQ new_partition_vec(std::vector<Record>& data, int left, int right){
+    long long int comp_count = 0;
+    long long int perm_count = 0;
     Record start = data[(left + right) / 2];
     int i = left;
     int j = right;
@@ -354,14 +407,22 @@ int new_partition(std::vector<Record>& data, int left, int right){
         if (i >= j) {
             break;
         }
+        comp_count++;
         Record to_swap = data[i];
         data[i] = data[j];
         data[j] = to_swap;
+        perm_count++;
     }
-    return j;
+    ToReturnQ to_return;
+    to_return.ind = j;
+    to_return.perm_count = perm_count;
+    to_return.comp_count = comp_count;
+    return to_return;
 }
 
 void new_qsort_vec(std::vector<Record>& data, int left, int right){
+    long long int comp_count = 0;
+    long long int perm_count = 0;
     std::stack<std::pair<int, int>> moves;
     moves.push({left, right});
     while(moves.empty() == false){
@@ -370,7 +431,11 @@ void new_qsort_vec(std::vector<Record>& data, int left, int right){
         if (left_right.second<= left_right.first) {
             continue;
         }
-        int i = new_partition(data, left_right.first, left_right.second);
+        comp_count ++;
+        ToReturnQ new_data = new_partition_vec(data, left_right.first, left_right.second);
+        long long int i = new_data.ind;
+        perm_count += new_data.perm_count;
+        comp_count += new_data.comp_count;
         if(i - left_right.first > left_right.second - i){
             moves.push({left_right.first, i - 1});
             moves.push({i+1, left_right.second});
@@ -378,14 +443,17 @@ void new_qsort_vec(std::vector<Record>& data, int left, int right){
             moves.push({i+1, left_right.second});
             moves.push({left_right.first, i - 1});
         }
+        comp_count ++;
     }
+    std::cout<<"Count of compression: "<<comp_count<<std::endl;
+    std::cout<<"Count of permutations: "<<perm_count<<std::endl;
 }
+
 int main(){
     std::string root_to_input_file;
     std::cout<<"Enter file name(start from disk)"<<std::endl;
     //C:\Users\Alexandr\CLionProjects\Lab_work3\little.txt
     std::cin>>root_to_input_file;
-    std::cout<<root_to_input_file<<std::endl;
     std::string line_n;
     MadeReader reader = make_reader(root_to_input_file);
     Record* raw_arr = new Record[reader._len];
@@ -424,13 +492,20 @@ int main(){
 //    std::cout<< is_sorted_vec(data)<<std::endl;
 //    print_vec(sorted_vec);
     std::cout<<"------------------------------"<<std::endl;
+    reader = make_reader(root_to_input_file);
+    Record* raw_data = new Record[reader._len];
+    ind  = 0;
+    while (std::getline(reader.reader, line)){
+        Record to_add = make_record(line);
+        raw_data[ind] = to_add;
+        ind++;
+    }
     start_time = clock();
-    sorted_arr = qsort_arr(raw_arr,0 ,reader._len-1);
+    qsort_arr(raw_data,0 ,reader._len-1);
     end_time = clock();
     std::cout<<"Time to qsort for array: " << end_time - start_time<<std::endl;
-    std::cout<<is_sorted_arr(sorted_arr, reader._len)<<std::endl;//work wrong!
-//    print_arr(sorted_arr, reader._len);
-
+    std::cout<<is_sorted_arr(raw_arr, reader._len)<<std::endl;//work wrong!
+//    print_arr(raw_arr, reader._len);
     std::cout<<"------------------------------"<<std::endl;
     start_time = clock();
 //    sorted_vec = qsort_vec(data,0 ,data.size()-1);
