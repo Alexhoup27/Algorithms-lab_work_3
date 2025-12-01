@@ -278,83 +278,36 @@ std::vector<Record> shell_sort_vec(std::vector<Record> data){ // need tests
     return data;
 }
 
-std::pair<int, std::vector<Record>> partition_vec(std::vector<Record> data,int left, int right){
-    Record start = data[(left + right) / 2];
-    int i = left;
-    int j = right;
-//    if (i == 998 && j == 999){
-//        std::cout<<"stop"<<std::endl;
-//    }
-//    if (right - left == 1){
-//        if (data[left].cost > data[right].cost){
-//            Record to_swap = data[left];
-//            data[left] = data[right];
-//            data[right] = to_swap;
-//            return {right, data};
-//        }
-//    }
-    while(i<= j){
-        while (data[i].cost <= start.cost){
-            if (i + 1 < data.size()){
-                i++;
-            }else{
-                break;
-            }
+
+int partition_lomuto(std::vector<Record>& data, int low, int high) {
+    int pivot_cost = data[high].cost; // Опорный элемент - последний
+    int i = (low - 1);                 // Индекс меньшего элемента
+
+    for (int j = low; j <= high - 1; j++) {
+        // Если текущий элемент меньше или равен опорному
+        if (data[j].cost <= pivot_cost) {
+            i++;
+            std::swap(data[i], data[j]); // Меняем элементы местами
         }
-        while(data[j].cost > start.cost){
-            if (j-1 > -1){
-                j--;
-            }else{
-                break;
-            }
-        }
-        if (i >= j){
-            break;
-        }
-        Record to_swap = data[i];
-        data[i] = data[j];
-        data[j] = to_swap;
     }
-    return {j, data};
+    // Ставим опорный элемент (data[high]) на его правильное место (data[i + 1])
+    std::swap(data[i + 1], data[high]);
+    return (i + 1); // Возвращаем индекс опорного элемента
 }
 
-std::vector<Record> qsort_vec(std::vector<Record> data, int left, int right){
-    std::stack<std::pair<int, int>> moves;
-    moves.push({left, right});
-    while(moves.empty() == false){
-        std::pair<int, int> left_right = moves.top();
-        moves.pop();
-        if (left_right.second<= left_right.first) {
-            continue;
-        }
-//        std::cout<<left_right.first << " "<< left_right.second<<" " << std::endl;
-        std::pair<int, std::vector<Record>>  now_part = partition_vec(data, left_right.first, left_right.second);
-//        std::cout<<left_right.first << " "<< left_right.second<<" " << std::endl;
-        int i = now_part.first;
-        data = now_part.second;
-        if(i - left_right.first > left_right.second - i){
-            moves.push({left_right.first, i - 1});
-            moves.push({i+1, left_right.second});
-        }else{
-            moves.push({i+1, left_right.second});
-            moves.push({left_right.first, i - 1});
-        }
-    }
-    return data;
-}
 
 std::pair<int, Record*> partition_arr(Record* data, int left, int right){
     Record start = data[(left + right) / 2];
     int i = left;
     int j = right;
     while(i<= j){
-        while (data[i].cost <= start.cost){
+        while (i <= right && data[i].cost <= start.cost) {
             i++;
         }
-        while(data[j].cost > start.cost){
+        while (j >= left  && data[j].cost > start.cost) {
             j--;
         }
-        if (i >= j){
+        if (i >= j) {
             break;
         }
         Record to_swap = data[i];
@@ -387,6 +340,46 @@ Record* qsort_arr(Record* data, int left, int right){
     return data;
 }
 
+int new_partition(std::vector<Record>& data, int left, int right){
+    Record start = data[(left + right) / 2];
+    int i = left;
+    int j = right;
+    while(i<= j){
+        while (i <= right && data[i].cost <= start.cost) {
+            i++;
+        }
+        while (j >= left  && data[j].cost > start.cost) {
+            j--;
+        }
+        if (i >= j) {
+            break;
+        }
+        Record to_swap = data[i];
+        data[i] = data[j];
+        data[j] = to_swap;
+    }
+    return j;
+}
+
+void new_qsort_vec(std::vector<Record>& data, int left, int right){
+    std::stack<std::pair<int, int>> moves;
+    moves.push({left, right});
+    while(moves.empty() == false){
+        std::pair<int, int> left_right = moves.top();
+        moves.pop();
+        if (left_right.second<= left_right.first) {
+            continue;
+        }
+        int i = new_partition(data, left_right.first, left_right.second);
+        if(i - left_right.first > left_right.second - i){
+            moves.push({left_right.first, i - 1});
+            moves.push({i+1, left_right.second});
+        }else{
+            moves.push({i+1, left_right.second});
+            moves.push({left_right.first, i - 1});
+        }
+    }
+}
 int main(){
     std::string root_to_input_file;
     std::cout<<"Enter file name(start from disk)"<<std::endl;
@@ -426,8 +419,9 @@ int main(){
     start_time = clock();
     auto sorted_vec = shell_sort_vec(data);
     end_time = clock();
-    std::cout<< is_sorted_vec(sorted_vec)<<std::endl;
     std::cout<<"Time to shell_sort for vector: " << end_time - start_time<<std::endl;
+    std::cout<< is_sorted_vec(sorted_vec)<<std::endl;
+//    std::cout<< is_sorted_vec(data)<<std::endl;
 //    print_vec(sorted_vec);
     std::cout<<"------------------------------"<<std::endl;
     start_time = clock();
@@ -439,11 +433,12 @@ int main(){
 
     std::cout<<"------------------------------"<<std::endl;
     start_time = clock();
-    sorted_vec = qsort_vec(data,0 ,data.size()-1);
+//    sorted_vec = qsort_vec(data,0 ,data.size()-1);
+    new_qsort_vec(data, 0, data.size() - 1);
     end_time = clock();
     std::cout<<"Time to qsort for vec: " << end_time - start_time<<std::endl;
     std::cout<<is_sorted_vec(sorted_vec)<<std::endl;//work wrong!
 //    print_vec(sorted_vec);
-    //C:\Users\Alexandr\CLionProjects\Lab_work3\sorted_output.txt
+// C:\Users\Alexandr\CLionProjects\Lab_work3\new_output.txt
     return 0;
 }
